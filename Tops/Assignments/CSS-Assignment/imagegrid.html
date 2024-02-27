@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <title>Document</title>
+    </head>
+<head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            overflow: hidden;
+        }
+
+        .main {
+            display: grid;
+            grid-template-columns: auto auto auto auto auto auto;
+            gap: 10px;
+            background-color: black;
+            padding: 10px;
+            position: relative;
+            left: 0px;
+            height: 99vh;
+            width: 100%;
+        }
+
+        .main>div {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .img1 {
+            grid-column: 1 / 4;
+            grid-row: 1/5;
+            background-image: url(image/project-3n.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .img2 {
+            background-image: url(https://localadventurer.com/wp-content/uploads/2019/08/st-george-utah.jpg);
+            grid-column: 4 / 6;
+            grid-row: 1/5;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .img3 {
+            background-image: url(https://www.russellwtaylor.com/images/img_1.jpg);
+            grid-column: 1/ 2;
+            grid-row: 5/10;
+            background-size: cover;
+            background-position: center;
+            background-position: top;
+        }
+
+        .img4 {
+            background-image: url(https://d2mug8yhikhiqv.cloudfront.net/wp-content/uploads/2016/08/23051439/image-1104-full-2x.jpg);
+            grid-column: 2/ 4;
+            grid-row: 5/10;
+            background-size: cover;
+            background-position: center;
+            background-position: top;
+        }
+
+        .img5 {
+            background-image: url(https://nobaproject.com/images/shared/images/000/003/053/original.jpg);
+            background-size: cover;
+            grid-row: 5/10;
+            grid-column: 4/ 6;
+
+            background-position: center;
+            background-position: top;
+            
+        }
+
+        .img6 {
+            background-image: url(https://static.wixstatic.com/media/nsplsh_55543263783148727a764d~mv2_d_4000_6000_s_4_2.jpg/v1/fill/w_657,h_520,fp_0.50_0.50,q_80,usm_0.66_1.00_0.01,enc_auto/nsplsh_55543263783148727a764d~mv2_d_4000_6000_s_4_2.jpg);
+            grid-column: 1/ 3;
+            grid-row: 10/14;
+            background-size: cover;
+        }
+
+        .img7 {
+            background-image: url(https://royal-brides.com/wp-content/uploads/2020/02/irelands-ladies-what-that-girl-expect-from-future-husband-1024x683.jpg);
+            grid-column: 3/ 6;
+            grid-row: 10/14;
+            background-size: cover;
+        }
+
+        .box {
+            position: absolute;
+            height: 99vh;
+            width: 10px;
+        }
+        .shutter{
+            color: white;
+            position: absolute;
+            right: 40px;
+            font-family:monospace;
+            font-size: 30px;
+        }
+        .home{
+            color: #e74c3c;
+            position: absolute;
+            right: 40px;
+            top: 60px;
+            font-family:monospace;
+            font-size: 20px;
+            
+        }
+        .photo{
+            color: white;
+            position: absolute;
+            right: 40px;
+            top: 100px;
+            font-family:monospace;
+            font-size: 20px;
+
+        }
+        .bio{
+            color: white;
+            position: absolute;
+            right: 40px;
+            top: 140px;
+            font-size: xx-small;
+            font-family:monospace;
+            font-size: 20px;
+
+        }
+        .blog{
+            color: white;
+            position: absolute;
+            right: 40px;
+            top: 180px;
+            font-family:monospace;
+            font-size: 20px;
+
+        }
+        .contact{
+            color: white;
+            position: absolute;
+            right: 40px;
+            top: 220px;
+            font-family:monospace;
+            font-size: 20px;
+
+        }
+        .facebook{
+            position: absolute;
+            top: 275px;
+            right: 147px;
+        }
+        .instagram{
+            position: absolute;
+            top: 275px;
+            right: 41px;
+        }
+        .twitter{
+            position: absolute;
+            top: 275px;
+            right: 90px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="img1"></div>
+        <div class="img2"></div>
+        <div class="img3"></div>
+        <div class="img4"></div>
+        <div class="img5"></div>
+        <div class="img6"></div>
+        <div class="img7"></div>
+        <div class="shutter">SHUTTER</div>
+        <div class="home">HOME</div>
+        <div class="photo">PHOTOS</div>
+        <div class="bio">BIO</div>
+        <div class="blog">BLOG</div>
+        <div class="contact">CONTACT</div>
+
+        <div class="facebook">
+        <i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i>
+        </div>
+
+        <div class="instagram">
+            <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+        </div>
+
+        <div class="twitter">
+            <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
+        </div>
+    </div>
+
+</body>
+</html>
