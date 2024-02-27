@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .black img {
+        height: 99vh;
+        width: 53%;
+        position: relative;
+    }
+
+    .tablet img {
+        height: 99vh;
+        width: 50%;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+
+    }
+
+    .button {
+        opacity: 0.251;
+        width: 50px;
+        height: 50px;
+        border-radius: 36px;
+        background-color: rgb(223, 216, 216);
+        position: absolute;
+        top: 100px;
+        left: 680px;
+    }
+
+    .smallbtn {
+        width: 44px;
+        height: 44px;
+        border-radius: 32px;
+        background-color: #f4f5f9;
+        position: absolute;
+        top: 103px;
+        left:683px;
+    }
+
+    .tv img {
+        position: absolute;
+        top: 12px;
+        left: 7px;
+    }
+
+    .nextbtn {
+        width: 44px;
+        height: 44px;
+        border-radius: 32px;
+        background-color: #f4f5f9;
+        position: absolute;
+        top: 233px;
+        left: 683px;
+
+    }
+
+    .book img {
+        position: absolute;
+        top: 9px;
+        left: 7px;
+    }
+
+    .button2 {
+        opacity: 0.251;
+        width: 50px;
+        height: 50px;
+        border-radius: 36px;
+        background-color: rgb(223, 216, 216);
+        position: absolute;
+        top: 230px;
+        left: 680px;
+    }
+
+    .button3 {
+        opacity: 0.251;
+        width: 50px;
+        height: 50px;
+        border-radius: 36px;
+        background-color: rgb(223, 216, 216);
+        position: absolute;
+        top: 360px;
+        left: 684px;
+    }
+
+    .lastbtn {
+        width: 44px;
+        height: 44px;
+        border-radius: 32px;
+        background-color: #f4f5f9;
+        position: absolute;
+        top: 363px;
+        left: 687px;
+    }
+
+    .camera img {
+        position: absolute;
+        top: 11px;
+        left: 8px;
+    }
+
+    .service {
+        position: absolute;
+        top: 20px;
+        color: white;
+        left:500px;
+        top: 40px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', Arial, Helvetica, sans-serif;
+    }
+
+    .line {
+        position: absolute;
+        height: 20px;
+        width: 2px;
+        background-color: rgb(212, 71, 71);
+        top: 40px;
+        left: 610px;
+    }
+
+    .web {
+        position: absolute;
+        top: 20px;
+        color: rgb(212, 71, 71);
+        left: 537px;
+        top: 78px;
+        font-size: small;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', Arial, Helvetica, sans-serif;
+    }
+
+    .lorem {
+        position: absolute;
+        top: 20px;
+        color: white;
+        left: 227px;
+        text-align: right;
+        top: 107px;
+        font-size: smaller;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', Arial, Helvetica, sans-serif;
+
+    }
+    .print{
+        position: absolute;
+        top: 20px;
+        color: rgb(212, 71, 71);
+        left: 530px;
+        top: 206px;
+        font-size: small;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', Arial, Helvetica, sans-serif;
+    }
+    .lorem2{
+        position: absolute;
+        top: 20px;
+        color: white;
+        left: 227px;
+        text-align: right;
+        top: 237px;
+        font-size: smaller;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', Arial, Helvetica, sans-serif;
+    }
+    .photo{
+        position: absolute;
+        top: 20px;
+        color: rgb(212, 71, 71);
+        left: 520px;
+        top: 340px;
+        font-size: small;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', Arial, Helvetica, sans-serif;
+    }
+    .lorem3{
+        position: absolute;
+        top: 20px;
+        color: white;
+        left: 260px;
+        text-align: right;
+        top: 372px;
+        font-size: smaller;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', Arial, Helvetica, sans-serif;
+    }
+    .line2{
+        position: absolute;
+        height: 20px;
+        width: 0.5px;
+        background-color: rgb(133, 128, 128);
+        top: 45%;
+        left: 20px;
+    }
+    .line4{
+        position: absolute;
+        height: 20px;
+        width: 0.5px;
+        background-color: rgb(133, 128, 128);
+        top: 54.8%;
+        left: 20px;
+    }
+    .line3{
+        position: absolute;
+        height: 20px;
+        width: 1px;
+        background-color: rgb(111, 53, 53);
+        top: 50%;
+        left: 20px;
+    }
+</style>
+
+<body>
+    <div class="main">
+
+        <div class="black"><img src="image/bac1.png" alt="">
+            <div class="service">OUR SERVICES</div>
+            <div class="line"></div>
+            <div class="web">WEB DESIGN</div>
+            <div class="lorem">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis eaque <br>cupiditate molestias quia officia odit ducimus autem quae fugit excepturi</div>
+            <div class="print">PRINT DESIGN</div>
+            <div class="lorem2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis eaque <br>cupiditate molestiasquia officia odit ducimus autem </div>
+            <div class="photo">PHOTOGRAPHY</div>
+            <div class="lorem3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis <br>eaque cupiditate molestiasquia officia odit ducimus autem </div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+            <div class="line4"></div>
+
+
+        </div>
+        <div class="tablet"><img src="image/tablet.png" alt=""></div>
+
+        <div class="button"></div>
+        <div class="smallbtn">
+            <div class="tv"><img src="image/tv.png" alt=""></div>
+        </div>
+
+        <div class="button2"></div>
+        <div class="nextbtn">
+            <div class="book"><img src="image/book.png" alt=""></div>
+        </div>
+
+        <div class="button3"></div>
+        <div class="lastbtn">
+            <div class="camera"><img src="image/camera.png" alt=""></div>
+        </div>
+
+    </div>
+</body>
+
+</html>
