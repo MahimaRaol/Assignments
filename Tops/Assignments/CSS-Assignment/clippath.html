@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        overflow-x: hidden;
+    }
+
+    .main {
+        background: linear-gradient(to right,
+                rgba(17, 17, 17, 0.6),
+                rgba(17, 17, 17, 0.6)),
+            url(image/sky.png);
+        height: 100vh;
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+        clip-path: polygon(0 0,
+                100% 0,
+                100% 80%,
+                50% 100%,
+                0 80%);
+    }
+
+    .button {
+        opacity: 0.251;
+        background-color: white;
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        position: absolute;
+        bottom: -46px;
+        left: 735px;
+    }
+
+    .smallbutton {
+        background-color: #f4f5f9;
+        height: 53px;
+        width: 53px;
+        border-radius: 50%;
+        position: relative;
+        bottom: 26px;
+        left: 739px;
+    }
+
+    .form {
+        background-image: url(image/Forma\ 1.png);
+        position: absolute;
+        height: 30px;
+        width: 30px;
+        background-position: center;
+        /* background-size: cover; */
+        background-repeat: no-repeat;
+        top: 10px;
+        left: 10px;
+    }
+
+    .rectangle {
+        background-color: white;
+        height: 40px;
+        width: 40px;
+        position: absolute;
+        top: 51px;
+        left: 300px;
+    }
+
+    .line {
+        border: 2px solid white;
+        position: absolute;
+        height: 36.6px;
+        width: 100px;
+        top: 51px;
+        left: 340px;
+
+    }
+
+    .l {
+        font-size: 36px;
+        letter-spacing: 1px;
+        line-height: 41px;
+        color: #4a4c55;
+        font-weight: 700;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        position: absolute;
+        left: -31px;
+
+    }
+
+    .o {
+        font-size: 36px;
+        letter-spacing: 1px;
+        line-height: 41px;
+        color: #ffffff;
+        font-weight: 100;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        position: absolute;
+        left: 3px;
+        top: -4px;
+    }
+
+    .g {
+        font-size: 36px;
+        letter-spacing: 1px;
+        line-height: 41px;
+        color: #ffffff;
+        font-weight: 100;
+        font-family: 'Times New Roman', Times, serif;
+        position: absolute;
+        left: 37px;
+        top: -4px;
+    }
+
+    .h {
+        font-size: 36px;
+        letter-spacing: 1px;
+        line-height: 41px;
+        color: #ffffff;
+        font-weight: 100;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        position: absolute;
+        left: 69px;
+        top: -4px;
+
+    }
+
+    .home {
+        position: absolute;
+        top: 63px;
+        color: #e74c3c;
+        left: 645px;
+    }
+
+    .about {
+        position: absolute;
+        top: 63px;
+        color: white;
+        left: 745px;
+    }
+
+    .port {
+        position: absolute;
+        top: 63px;
+        color: white;
+        left: 845px;
+    }
+
+    .price {
+        position: absolute;
+        top: 63px;
+        color: white;
+        left: 976px;
+    }
+
+    .team {
+        position: absolute;
+        top: 63px;
+        color: white;
+        left: 1086px;
+    }
+
+    .blog {
+        position: absolute;
+        top: 63px;
+        color: white;
+        left: 1185px;
+    }
+
+    .contact {
+        position: absolute;
+        top: 63px;
+        color: white;
+        left: 1280px;
+    }
+
+    .border {
+        border: 1px solid #e74c3c;
+        width: 50px;
+        position: absolute;
+        left: 643px;
+        color: #3d19bc;
+        top: 90px;
+    }
+
+    .blur {
+        opacity: 0.251;
+        height: 35px;
+        width: 35px;
+        position: absolute;
+        background-color: rgb(248, 245, 245);
+        top: 302px;
+        left: 42px;
+    }
+
+    .left {
+        position: absolute;
+        background-image: url(image/fa-angle-left.png);
+        top: 300px;
+        left: 48px;
+        height: 40px;
+        width: 14px;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+
+    }
+
+    .right {
+        position: absolute;
+        top: 302px;
+        height: 35px;
+        width: 35px;
+        background-color: #e74c3c;
+        right: 50px;
+    }
+
+    .errow {
+        position: absolute;
+        background-image: url(image/fa-angle-right.png);
+        top: 308px;
+        right: 60px;
+        height: 23px;
+        width: 15px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .our {
+        position: absolute;
+        color: white;
+        top: 204px;
+        left: 645px;
+        font-size: large;
+    }
+
+    .welcome {
+        position: absolute;
+        top: 246px;
+        left: 480px;
+        font-size: 52px;
+        letter-spacing: 7px;
+        color: #f4f5f9;
+        font-weight: 700;
+        font-family: "Open Sans";
+        text-align: center;
+    }
+    .line2{
+        position: absolute;
+        height: 1px;
+        width: 90px;
+        background-color: rgb(133, 128, 128);
+        top: 45.4%;
+        left: 660px;
+    }
+    .line3{
+        position: absolute;
+        height: 1px;
+        width: 90px;
+        background-color: rgb(133, 128, 128);
+        top: 45.4%;
+        left: 790px;
+    }
+    .dot{
+        height: 7px;
+        width: 7px;
+        background-color:#e74c3c ;
+        position: absolute;
+        top: 45%;
+        left: 770px;
+        border-radius: 50%;
+    }
+    .lorem{
+        top: 50%;
+        left: 490px;
+        position: absolute;
+        color: white;
+        font-size: medium;
+        text-align: center;
+    }
+    .get1{
+        background-color: #e74c3c ;
+        position: absolute;
+        top: 60%;
+        left: 565px;
+        height: 40px;
+        width: 200px;
+    }
+    .get{
+        color: white;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .learn1{
+        border: 2px solid white;
+        position: absolute;
+        top: 60%;
+        left: 780px;
+        height: 37px;
+        width: 200px;
+    }
+    .squre{
+        background-image: url(image/scqure.png);
+        position: absolute;
+        height: 200px;
+        width: 200px;
+        background-repeat: no-repeat;
+        top: 820px;
+        left: 200px;
+        
+    }
+    .infinite{
+        background-image: url(image/infinite.png);
+        height: 20px;
+        width: 27px;
+        position: absolute;
+        background-repeat: no-repeat;
+        top: 40px;
+        left: 30px;
+    }
+    .sleek{
+        position: absolute;
+        top: 924px;
+        left: 191px;
+        color: #e74c3c;
+    }
+    .border1{
+        border: 1px solid #6a6a6a;
+        position: absolute;
+        width: 40px;
+        top: 960px;
+        left: 225px;
+        
+    }
+    .lorem1{
+        position: absolute;
+        
+        color: black;
+        text-align: center;
+        top: 990px;
+        left: 80px;
+    }
+    .box{
+       border: 2px solid rgb(236, 226, 226);
+        position: absolute;
+        height: 65px;
+        width: 65px;
+        background-repeat: no-repeat;
+        top: 830px;
+        left: 567px;
+        
+       
+    }
+    .heart{
+        background-image: url(image/heart.png);
+        height: 20px;
+        width: 40px;
+        position: absolute;
+        background-repeat: no-repeat;
+        top: 24px;
+        left: 22px;
+    }
+    .clean{
+        position: absolute;
+        top: 920px;
+        left: 551px;
+        color: black;
+    }
+    .border2{
+         border: 1px solid #6a6a6a;
+        position: absolute;
+        width: 40px;
+        top: 960px;
+        left: 581px;
+    }
+    .lorem2{
+        position: absolute;
+        
+        color: black;
+        text-align: center;
+        top: 990px;
+        left: 440px;
+    }
+    .box2{
+        border: 2px solid rgb(236, 226, 226);
+        position: absolute;
+        height: 65px;
+        width: 65px;
+        background-repeat: no-repeat;
+        top: 830px;
+        left: 925px;
+    }
+    .bulb{
+        background-image: url(image/bulb.png);
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        background-repeat: no-repeat;
+        top: 20px;
+        left: 23px;
+    }
+    .creative{
+        position: absolute;
+        top: 920px;
+        left: 900px;
+        color: black;
+    }
+    .border3{
+        border: 1px solid #6a6a6a;
+        position: absolute;
+        width: 40px;
+        top: 960px;
+        left: 940px;
+    }
+    .lorem3{
+        position: absolute;
+        
+        color: black;
+        text-align: center;
+        top: 990px;
+        left: 803px;
+    }
+    .box3{
+        border: 2px solid rgb(236, 226, 226);
+        position: absolute;
+        height: 65px;
+        width: 65px;
+        background-repeat: no-repeat;
+        top: 830px;
+        left: 1285px;
+    }
+    .message{
+        background-image: url(image/message.png);
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        background-repeat: no-repeat;
+        top: 20px;
+        left: 23px;
+    }
+    .free{
+        position: absolute;
+        top: 920px;
+        left: 1265px;
+        color: black;
+    }
+    .border4{
+        border: 1px solid #6a6a6a;
+        position: absolute;
+        width: 40px;
+        top: 960px;
+        left: 1300px;
+    }
+    .lorem4{
+        position: absolute;
+        
+        color: black;
+        text-align: center;
+        top: 990px;
+        left: 1160px;
+    }
+    
+    
+</style>
+
+<body>
+    <div class="main"></div>
+    <div class="button"></div>
+    <div class="smallbutton">
+        <div class="form"></div>
+    </div>
+    <div class="rectangle"></div>
+    <div class="line">
+        <div class="l">L</div>
+        <div class="o">o</div>
+        <div class="g">g</div>
+        <div class="h">o</div>
+    </div>
+
+    <div class="home">HOME</div>
+    <div class="about">ABOUT</div>
+    <div class="port">PORTFOLIO</div>
+    <div class="price">PRICING</div>
+    <div class="team">TEAM</div>
+    <div class="blog">BLOG</div>
+    <div class="contact">CONTACT</div>
+    <div class="border"></div>
+    <div class="blur"></div>
+    <div class="left"></div>
+    <div class="right"></div>
+    <div class="errow"></div>
+    <div class="our">Our Clients Are Our First Priority</div>
+    <div class="welcome">WELCOME TO SKY</div>
+    <div class="line2"></div>
+    <div class="line3"></div>
+    <div class="dot"></div>
+    <div class="lorem">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure repudiandae consectetur <br>assumenda dicta accusamus! Dolorum veniam obcaecati quaerat ex, blanditiis doloribus <br>
+         tempore eaque, maiores facilis officiis excepturi, molestiae iure labore.</div>
+        
+        
+        <div class="get1"><div class="get">GET STARTED NOW</div></div>
+        <div class="learn1"><div class="get">LEARN MORE</div></div>
+
+        <div class="squre">
+            <div class="infinite"></div>
+        </div>
+        <div class="sleek">SLEEK DESIGN</div>
+        <div class="border1"></div>
+        <div class="lorem1">Lorem ipsum dolor sit amet consectetur, adipisicing <br>Delectus nostrum repudiandae doloremque <br> iste maiores unde quae</div>
+
+        <div class="box">
+            <div class="heart"></div>
+        </div>
+        <div class="clean">CLEAN CODE</div>
+        <div class="border2"></div>
+        <div class="lorem2">Lorem ipsum dolor sit amet consectetur, adipisicing <br>Delectus nostrum repudiandae doloremque <br> iste maiores unde quae</div>
+
+        <div class="box2">
+            <div class="bulb"></div>
+        </div>
+        <div class="creative">CREATIVE IDEAS</div>
+        <div class="border3"></div>
+        <div class="lorem3">Lorem ipsum dolor sit amet consectetur, adipisicing <br>Delectus nostrum repudiandae doloremque <br> iste maiores unde quae</div>
+
+        <div class="box3">
+            <div class="message"></div>
+        </div>
+        <div class="free">FREE SUPPORT</div>
+        <div class="border4"></div>
+        <div class="lorem4">Lorem ipsum dolor sit amet consectetur, adipisicing <br>Delectus nostrum repudiandae doloremque <br> iste maiores unde quae</div>
+</body>
+
+</html>
