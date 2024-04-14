@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow"/>
+    <meta name="description" content="our first simple html wesite just adding less css styles.">
+    <meta name="author" content="Mahima">
+    <title>Project</title>
+
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Urbanist:wght@300;400;600;700;800;900&display=swap");
+    
+        html {
+        font-family: "jost", sans-serif;
+        background-color: #efefef;
+        }
+        h1 {
+            font-weight: bold;
+            font-size: 2rem;
+        }
+        li {
+            list-style: none;
+        }
+        li,
+        p,
+        label {
+            font-family: Urbanist;
+            letter-spacing: 0.06;
+            line-height: 1.6;
+            font-size: 1.4rem;
+        }
+        audio {
+            box-shadow: rgba(100, 100, 111, 0.2)0px 7px 29px 0px;
+            border-radius: 25px;
+        }
+        progress {
+            height: 2rem;
+            width: 20rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Our Header -->
+    <header>
+        <div class="logo">
+            <a href="#" target="_blank">
+                <img src="Images/html5logo.png" alt="html5 logo" height="70px" width="70px">
+            </a>
+        </div>
+        <nav>
+            <ul style="list-style: none; display: flex; gap: 10px;">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- our main section -->
+    <main>
+        <div class="content">
+            <h1>This Is our demo html website</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, dolorum eveniet voluptatibus ipsa aspernatur placeat impedit doloribus minima mollitia doloremque ullam. Rem molestiae nesciunt soluta eaque ut quidem quisquam atque.</p>
+            <button>see my works</button>
+            <a href="https://www.youtube.com/" target="_blank"><button>visit youtube</button></a>
+        </div>
+    <!-- our main section images -->
+        <div class="content-img">
+            <figure>
+                <img src="Images/html5-logo.webp" alt="html-logo image1" width="300" height="auto">
+            </figure>
+        </div>
+    </main>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <h2>This is Our About Section</h2>
+        <div class="about-content">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta, vero?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui fugit quisquam dolores perferendis voluptates possimus itaque accusamus dignissimos id ex? Sed tempora fuga suscipit, minus nobis blanditiis quod itaque temporibus!</p>
+            <p><strong>My Coading Knowledge</strong></p>
+            <div class="about-progress">
+                <label for="html">HTML CODE: </label>
+                <progress id="html" max="100" value="100">100% HTML</progress>
+            </div>
+            <div class="about-progress">
+                <label for="css">CSS CODE: </label>
+                <progress id="css" max="100" value="80">100% CSS</progress>
+            </div>
+            <div class="about-progress">
+                <label for="js">JS CODE: </label>
+                <progress id="js" max="100" value="50">50% JS</progress>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Services Section -->
+    <section class="service-section">
+        <h2>Our Services</h2>
+        <div class="services-gallery" style="display: flex;">
+            <figure>
+                <img src="Images/html5-logo.jpeg" alt="html-logo" width="250" height="125">
+                <figcaption>Html Logo</figcaption>
+            </figure>
+
+            <figure>
+                <img src="Images/html5-logo.jpeg" alt="html-logo" width="250" height="125">
+                <figcaption>Html Logo</figcaption>
+            </figure>
+
+            <figure>
+                <img src="Images/html5-logo.jpeg" alt="html-logo" width="250" height="125">
+                <figcaption>Html Logo</figcaption>
+            </figure>
+
+            <figure>
+                <img src="Images/html5-logo.jpeg" alt="html-logo" width="250" height="125">
+                <figcaption>Html Logo</figcaption>
+            </figure>
+
+            <figure>
+                <img src="Images/html5-logo.jpeg" alt="html-logo" width="250" height="125">
+                <figcaption>Html Logo</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <!--Our Blog Section -->
+    <section class="blog-section">
+        <h2>Our Blogs</h2>
+        <article>
+            <header>
+                <h2>This is our Article's Header</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius nostrum eveniet dignissimos praesentium nisi porro suscipit atque esse, facere quasi ipsa at dolores, ipsam culpa!</p>
+            </header>
+
+            <section>
+                <h3>This is our Sub Article's Header</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam iure velit consequatur repudiandae amet vitae voluptates dignissimos nulla magnam eaque.</p>
+            </section>
+
+            <section>
+                <h3>This is our Sub Article's Header</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam iure velit consequatur repudiandae amet vitae voluptates dignissimos nulla magnam eaque.</p>
+            </section>
+
+            <section>
+                <h3>This is our Sub Article's Header</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam iure velit consequatur repudiandae amet vitae voluptates dignissimos nulla magnam eaque.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla blanditiis quibusdam eligendi maxime, et accusamus expedita similique nostrum mollitia sunt.</p>
+            </section>
+
+            <p>Thank you for reading Our Articles</p>
+        </article>
+    </section>
+
+    <!-- podcast section -->
+    <section class="podcast-section">
+        <p>
+            <em>I have also added web development podcast so please click on play button to play</em>
+        </p>
+        <audio controls autoplay muted>
+            <source src="audio/audio.mp3" type="audio/mpeg">
+            <source src="./audio/audio.wav" type="audio/wav">
+            Your Browser does not support the audio element
+        </audio>
+    </section>
+
+    <!-- other article link section -->
+    <section class="blog-link-section">
+        <p>Hope you like my other blogs too.</p>
+        <ul>
+            <li><a href="https://www.youtube.com/" target="_blank">1st youtube link</a></li>
+            <li><a href="https://www.youtube.com/" target="_blank">2nd youtube link</a></li>
+            <li><a href="https://www.youtube.com/" target="_blank">3rd youtube link</a></li>
+        </ul>
+    </section>
+
+    <!-- Contact us section -->
+    <section class="contact-us" id="contact">
+        <h2>feel free to contact us</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.714083449065!2d72.60746851053162!3d22.997539079104566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e85c2fc005927%3A0x918e69150ca1c935!2sTOPS%20Technologies%20-%20Best%20IT%20Training%20Institute%20in%20Ahmedabad!5e0!3m2!1sen!2sin!4v1712505318367!5m2!1sen!2sin" width="100%" 
+        height="400" style="border:0;" allowfullscreen="" title="my training center" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe><br>
+
+    <!-- form section -->
+        <div>
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username"  placeholder="enter username">
+        </div><br>
+        <div>
+            <label for="email">Enter your Email</label>
+            <input type="email" id="email" name="username">
+        </div><br>
+        <div>
+            <label for="textarea">Message</label>
+            <textarea name="" id="textarea" cols="30" rows="5" placeholder="enter message"></textarea>
+        </div><br>
+        <input type="submit" value="submit">
+    </section>
+
+    <!-- footer section -->
+    <footer>
+        <p>Copyright &copy; 2024 Mahima All Right Reserved</p>
+    </footer>
+    
+</body>
+</html>

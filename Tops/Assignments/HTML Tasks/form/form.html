@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Tag</title>
+
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Urbanist:wght@300;400;600;700;800;900&display=swap");
+        html {
+          font-family: "jost", sans-serif;
+          background-color: #efefef;
+        }
+        h1 {
+          font-weight: bold;
+        }
+    </style>
+</head>
+
+<!-- The <form> tag is used to create an HTML form for user input.
+
+The <input> HTML element is used to create interactive controls for web-based forms to accept data from the user. We must write inside the tag.  -->
+
+<body>
+    <h1>HTML Form</h1>
+    <form>
+
+        <!-- Text Input (<input type="text" />): Allows users to enter a single line of text.  -->
+        <div>
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username"  placeholder="enter username">
+        </div>
+
+        <!-- Password Input (<input type="password" />): Hides the entered text for secure password entry.  -->
+        <div>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password">
+        </div>
+
+        <!-- Number Input (<input type="number" />):Accepts numeric input and provides increment/decrement controls.  -->
+        <div>
+            <label for="number">Contact No.</label>
+            <input type="number" id="number" name="contact-no" max="5" min="1" value="1">
+        </div>
+
+        <!-- Email Input (<input type="email" />): Validates and formats input as an email address.  -->
+        <div>
+            <label for="email">Enter your Email</label>
+            <input type="email" id="email" name="username">
+        </div>
+
+        <!-- Radio Buttons (<input type="radio" />): Allows users to choose a single option from a group of
+        options.  -->
+        <div>
+            <label for="gender">Gender</label>
+            <input type="radio" name="gender" value="male">Male
+            <input type="radio" name="gender" value="female">Female
+        </div>
+
+        <!-- Checkboxes (<input type="checkbox" />): Allows users to select multiple options.  -->
+        <div>
+            <label for="checkbox">Hobbies</label>
+            <input type="checkbox" name="interest" value="music">Music
+            <input type="checkbox" name="interest" value="Cooking">Cooking
+        </div>
+
+        <!--  Dropdowns (<select> and <option>): Provides a list of options for users to choose from. -->
+        <div>
+            <label for="country">Fav Country:</label>
+            <select name="country" id="country">
+                <option value="ind">India</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+            </select>
+        </div>
+
+        <!-- <datalist> Provide a predefined list of options for autocomplete suggestions. -->
+        <div>
+            <label for="country">Select a Country</label>
+            <input type="text" name="country" id="country" list="countries">
+            <datalist id="countries">
+                <option>India</option>
+                <option>Canada</option>
+                <option>USA</option>
+            </datalist>
+        </div>
+
+        <!-- Textarea (<textarea>): Allows users to enter multiple lines of text. -->
+        <div>
+            <label for="textarea">Message</label>
+            <textarea name="" id="textarea" cols="30" rows="10" placeholder="enter message"></textarea>
+        </div>
+
+        <!-- File Upload (<input type="file">):  Lets users choose and upload files from their device. -->
+        <div>
+            <label for="file">Select File</label>
+            <input type="file" name="fileUpload">
+        </div>
+
+        <!-- Submit Button (<input type="submit">):  Submits the form data to the server. -->
+        <input type="submit" value="submit">
+        <hr>
+        <button type="submit">Submit</button>
+
+        <!-- Difference between ID vs Class attribute?
+             Multiple elements in HTML can have the same class value, whereas a value of id
+             attribute must be unique.
+        -->
+
+        <!-- Difference between Div vs Span Tag 
+                <div></div>
+                Element: Stands for "division." 1: Block-level element: It creates a block-level
+                container that typically represents a section or division of content. 2:Creates
+                a new line before and after itself by default.
+
+                <span></span>
+                Element: Inline-level element: It doesn't create a new line; it's used for
+                applying styles to specific parts of text within a larger block of content.
+                Doesn't create any visual change by default; it's used for applying CSS styles
+                or scripting.
+        -->
+
+        <div>
+            <h1>Welcome to <div style="color: red"> Our Website </div></h1>
+            <p>This is a division tag</p>
+        </div><hr>
+
+        <div>
+            <h1>Welcome to <span style="color: red"> Our Website </span></h1>
+            <p>This is a span tag</p>
+        </div>
+        <hr>
+        <!-- We show FIELDSET element -->
+        <fieldset>
+            <legend>Contact Us</legend>
+            <div>
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username"  placeholder="enter username">
+            </div>
+            <div>
+                <label for="number">Contact No.</label>
+                <input type="number" id="number" name="contact-no">
+            </div>
+            <div>
+                <label for="textarea">Message</label>
+                <textarea name="" id="textarea" cols="30" rows="10" placeholder="enter message"></textarea>
+            </div>
+        </fieldset>
+
+    </form>
+</body>
+</html>

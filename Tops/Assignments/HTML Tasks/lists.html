@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lists</title>
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Urbanist:wght@300;400;600;700;800;900&display=swap");
+    
+    html {
+      font-family: "jost", sans-serif;
+      background-color: #efefef;
+    }
+    li{
+        text-transform: capitalize;
+    }
+</style>
+</head>
+<body>
+    <h1 align="center">Html List Tag</h1>
+   
+    <h3><u>Unordered list</u></h3>
+   <!-- Unordered List (<ul>) Example:  
+    An unordered list is used to create a list of items that are not in any particular order. Each list item is marked with a bullet point. -->
+    <ul>
+        <li>orange</li>
+        <li>apple</li>
+    </ul>
+    <ul style="list-style-type: circle;">
+        <li>Potato</li>
+        <li>Tomato</li>
+    </ul>
+    <ul style="list-style-type: square;">
+        <li>dog</li>
+        <li>cat</li>
+    </ul>
+    <ul style="list-style-type: none;">
+        <li>tiger</li>
+        <li>lion</li>
+    </ul>
+    <ul style="list-style-type: disc;">
+        <li>rose</li>
+        <li>lotus</li>
+    </ul><hr>
+
+    <h3><u>Order list</u></h3>
+    <!-- Ordered List (<ol>) Example:
+    An ordered list is used to create a list of items in a specific order, typically indicated by numbers. 
+    
+    Ordered List (<ol>) Styles:
+
+    Decimal (list-style-type: decimal;): Default style - decimal numbers.
+    Lowercase Letters (list-style-type: lower-alpha;): Lowercase letters (a, b, c).
+    Uppercase Letters (list-style-type: upper-alpha;): Uppercase letters (A, B, C).
+    Lowercase Roman Numerals (list-style-type: lower-roman;): Lowercase Roman numerals (i, ii, iii).
+    Uppercase Roman Numerals (list-style-type: upper-roman;): Uppercase Roman numerals (I, II, III). -->
+    
+    <ol>
+        <li>1st class</li>
+        <li>2nd class</li>
+    </ol>
+    <ol style="list-style-type: none;">
+        <li>1st class</li>
+        <li>2nd class</li>
+    </ol>
+    <ol style="list-style-type: lower-alpha;">
+        <li>1st class</li>
+        <li>2nd class</li>
+    </ol>
+    <ol style="list-style-type: upper-alpha;">
+        <li>1st class</li>
+        <li>2nd class</li>
+    </ol>
+    <ol style="list-style-type: decimal;">
+        <li>1st class</li>
+        <li>2nd class</li>
+    </ol>
+    <ol style="list-style-type: lower-roman;">
+        <li>1st class</li>
+        <li>2nd class</li>
+    </ol>
+    <ol style="list-style-type: upper-roman;">
+        <li>1st class</li>
+        <li>2nd class</li>
+    </ol>
+    <ol type="I">
+        <li>1st class</li>
+        <li>2nd class</li>
+    </ol>
+
+    <ol start="4">
+        <li>1st class</li>
+        <li>2nd class</li>
+    </ol>
+    <hr>
+
+    <!-- Nested lists -->
+    <h3><u>Nested list</u></h3>
+    <ul>
+        <li>Fruits
+            <ol>
+                <li>Banana</li>
+                <li>Apple
+                    <ul style="list-style-type: square;">
+                        <li>Green</li>
+                        <li>Red</li>
+                    </ul>
+                </li>
+                <li>Pears</li>
+            </ol>
+        </li>
+        <li>Vagetables</li>
+        <li>Meat</li>
+    </ul><hr>
+
+    <!-- Horizontal Navigation Menu using an Unordered List -->
+    <h3 align="center"><u>Horizontal Navigation Menu using an Unordered List</u></h3>
+    <ul style="list-style-type: none; display: flex; gap: 15px;">
+        <li><a href="https://www.youtube.com/" target="_blank">Home</a></li>
+        <li>About</li>
+        <li>Contact Us</li>
+        <li>Service</li>
+    </ul>
+</body>
+</html>

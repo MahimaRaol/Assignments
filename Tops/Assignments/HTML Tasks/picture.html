@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picture Tag</title>
+</head>
+<!--  The <picture> element in HTML is used to provide multiple sources of an image, allowing the   browser to choose the most appropriate source based on the user's device,   screen size, and other factors. This is particularly useful for responsive  design and ensuring the best quality images are displayed. </picture>  -->
+<body>
+    <h1>HTML PICTURE TAG</h1>
+   <picture>
+
+    <source srcset="./images/html5-logo.webp" type="image/webp">
+    <source srcset="./images/html5-logo.jpg" type="image/jpg">
+    <source srcset="./images/html5-logo.jpeg" type="image/jpeg">
+
+    <img src="./Images/html5-logo.png" alt="html-5-logo" width="500">
+
+   </picture> 
+</body>
+</html>
