@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and Drop</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+    }
+    .container {
+        width: 300px;
+        height: 300px;
+        border: 2px dashed #ccc;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    .draggable {
+        width: 100px;
+        height: 50px;
+        background-color: rgb(21, 154, 206);
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: grab;
+    }
+</style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="draggable" draggable="true">Drag me 2</div>
+    </div>
+    <div class="container">
+        <div class="draggable" draggable="true">Drag me 1</div>
+        <div class="draggable" draggable="true">Drag me 3</div>
+    </div>
+
+    <script>
+        const draggables = document.querySelectorAll('.draggable');
+        const containers = document.querySelectorAll('.container');
+
+        draggables.forEach(draggable => {
+            draggable.addEventListener('dragstart', () => {
+                draggable.classList.add('dragging');
+            });
+
+            draggable.addEventListener('dragend', () => {
+                draggable.classList.remove('dragging');
+            });
+        });
+
+        containers.forEach(container => {
+            container.addEventListener('dragover', e => {
+                e.preventDefault();
+                const dragging = document.querySelector('.dragging');
+                container.appendChild(dragging);
+            });
+        });
+
+    </script>
+</body>
+</html>
